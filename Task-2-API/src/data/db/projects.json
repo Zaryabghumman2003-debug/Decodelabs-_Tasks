@@ -1,0 +1,50 @@
+[
+  {
+    "id": "harvest-co",
+    "title": "Harvest & Co.",
+    "tag": "Brand + Web",
+    "tone": "mocha",
+    "description": "A warm identity and storefront for an artisan grocer.",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "tidewater",
+    "title": "Tidewater",
+    "tag": "Product UI",
+    "tone": "blue",
+    "description": "A calm dashboard for coastal water-quality monitoring.",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "quiet-press",
+    "title": "Quiet Press",
+    "tag": "Editorial",
+    "tone": "grey",
+    "description": "A reading-first magazine layout with fluid type.",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "loomwork",
+    "title": "Loomwork",
+    "tag": "Identity",
+    "tone": "mocha",
+    "description": "Identity and site for a handwoven textile studio.",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "fernway",
+    "title": "Fernway",
+    "tag": "Web app",
+    "tone": "blue",
+    "description": "A booking flow for a small-batch plant nursery.",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "northbound",
+    "title": "Northbound",
+    "tag": "Landing",
+    "tone": "grey",
+    "description": "A launch page for a slow-travel journal app.",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  }
+]
