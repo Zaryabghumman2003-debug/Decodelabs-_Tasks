@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mocha Studio — a design practice crafting calm, considered digital interfaces. A showcase of responsive, accessible, semantic web design built with vanilla HTML, CSS, and JavaScript."
+    />
+    <meta name="theme-color" content="#A5956F" />
+    <title>Mocha Studio — Considered Digital Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"/>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Mocha Studio home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">Mocha<span>Studio</span></span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Primary">
+          <button
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-expanded="false"
+            aria-controls="primary-menu"
+          >
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <ul class="nav-list" id="primary-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#voices">Voices</a></li>
+            <li><a href="#contact" class="nav-cta">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Design studio · Est. 2019</p>
+            <h1 class="hero-title" id="hero-title">
+              Calm interfaces,<br /><span class="accent">considered</span> down
+              to the pixel.
+            </h1>
+            <p class="hero-lede">
+              We build responsive, accessible web experiences with plain HTML,
+              CSS, and JavaScript — no frameworks, no filler. Just structure,
+              style, and behavior that respect the web.
+            </p>
+            <div class="hero-actions">
+              <a href="#work" class="btn btn-primary">View selected work</a>
+              <a href="#contact" class="btn btn-ghost">Start a project</a>
+            </div>
+          </div>
+          <div class="hero-art reveal" aria-hidden="true">
+            <div class="art-orb art-orb-1"></div>
+            <div class="art-orb art-orb-2"></div>
+            <div class="art-orb art-orb-3"></div>
+            <div class="art-card">
+              <span class="art-card-label">Now</span>
+              <span class="art-card-value">Booking Q3</span>
+            </div>
+          </div>
+        </div>
+        <ul class="hero-stats reveal" aria-label="Studio at a glance">
+          <li>
+            <strong data-count="120">0</strong>
+            <span>Projects shipped</span>
+          </li>
+          <li>
+            <strong data-count="38">0</strong>
+            <span>Happy clients</span>
+          </li>
+          <li>
+            <strong data-count="9">0</strong>
+            <span>Design awards</span>
+          </li>
+          <li>
+            <strong data-count="100">0</strong>
+            <span>Percent hand-coded</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- About -->
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <header class="section-head reveal">
+            <p class="eyebrow">About the studio</p>
+            <h2 class="section-title" id="about-title">
+              A small practice with a&nbsp;<span class="accent"
+                >quiet obsession</span
+ >&nbsp;for craft.
+            </h2>
+          </header>
+          <article class="about-body reveal">
+            <p>
+              Mocha Studio is a two-person design and front-end practice. We
+              believe the best interfaces feel inevitable — the right
+              hierarchy, the right rhythm, the right amount of space. We work
+              in the open, ship in small slices, and write every line of markup
+              and CSS ourselves.
+            </p>
+            <p>
+              Our work is grounded in semantic HTML, mobile-first layout, and
+              progressive enhancement. Accessibility isn't a checkbox; it's the
+              starting point.
+            </p>
+            <ul class="principles">
+              <li>
+                <span class="principle-num">01</span>
+                <h3>Mobile-first, always</h3>
+                <p>
+                  Layouts begin at the smallest screen and scale up with
+                  <code>min-width</code> media queries.
+                </p>
+              </li>
+              <li>
+                <span class="principle-num">02</span>
+                <h3>Grid for structure, Flex for detail</h3>
+                <p>
+                  CSS Grid handles page architecture; Flexbox tidies the small
+                  stuff.
+                </p>
+              </li>
+              <li>
+                <span class="principle-num">03</span>
+                <h3>Typography that breathes</h3>
+                <p>
+                  Fluid sizing with <code>clamp()</code> keeps rhythm intact
+                  across every viewport.
+                </p>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section
+        class="section services"
+        id="services"
+        aria-labelledby="services-title"
+      >
+        <div class="container">
+          <header class="section-head reveal section-head--center">
+            <p class="eyebrow">What we do</p>
+            <h2 class="section-title" id="services-title">
+              Services, <span class="accent">end to end</span>.
+            </h2>
+          </header>
+          <div class="services-grid">
+            <article class="service-card reveal" style="--i: 0">
+              <span class="service-icon" aria-hidden="true"
+                ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18v14H3z"/><path d="M3 9h18M8 5v14"/></svg></span>
+              <h3>Interface design</h3>
+              <p>
+                Wireframes, prototypes, and design systems that scale from a
+                single button to a full product surface.
+              </p>
+              <ul class="service-tags">
+                <li>Figma</li>
+                <li>Design tokens</li>
+                <li>Prototyping</li>
+              </ul>
+            </article>
+            <article class="service-card reveal" style="--i: 1">
+              <span class="service-icon" aria-hidden="true"
+                ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6 2 12l6 6M16 6l6 6-6 6"/></svg></span>
+              <h3>Front-end engineering</h3>
+              <p>
+                Hand-written HTML, CSS, and JavaScript. No build magic, no
+                framework lock-in — just the platform.
+              </p>
+              <ul class="service-tags">
+                <li>Semantic HTML</li>
+                <li>CSS Grid</li>
+                <li>Vanilla JS</li>
+              </ul>
+            </article>
+            <article class="service-card reveal" style="--i: 2">
+              <span class="service-icon" aria-hidden="true"
+                ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+              <h3>Accessibility audits</h3>
+              <p>
+                WCAG-aligned reviews, keyboard-flow testing, and screen-reader
+                walkthroughs that turn friction into flow.
+              </p>
+              <ul class="service-tags">
+                <li>WCAG 2.2</li>
+                <li>ARIA</li>
+                <li>Keyboard flow</li>
+              </ul>
+            </article>
+            <article class="service-card reveal" style="--i: 3">
+              <span class="service-icon" aria-hidden="true"
+                ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H4z"/><path d="M8 20h8M12 16v4"/></svg></span>
+              <h3>Performance tuning</h3>
+              <p>
+                Lean assets, deferred scripts, and measured Core Web Vitals so
+                pages feel instant on any connection.
+              </p>
+              <ul class="service-tags">
+                <li>Lighthouse</li>
+                <li>Lazy loading</li>
+                <li>Vitals</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work -->
+      <section class="section work" id="work" aria-labelledby="work-title">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow">Selected work</p>
+            <h2 class="section-title" id="work-title">
+              Recent <span class="accent">projects</span>.
+            </h2>
+          </header>
+          <div class="work-grid">
+            <article class="work-card reveal" style="--i: 0">
+              <div class="work-media" data-tone="mocha">
+                <span class="work-tag">Brand + Web</span>
+              </div>
+              <div class="work-meta">
+                <h3>Harvest &amp; Co.</h3>
+                <p>A warm identity and storefront for an artisan grocer.</p>
+              </div>
+            </article>
+            <article class="work-card reveal" style="--i: 1">
+              <div class="work-media" data-tone="blue">
+                <span class="work-tag">Product UI</span>
+              </div>
+              <div class="work-meta">
+                <h3>Tidewater</h3>
+                <p>A calm dashboard for coastal water-quality monitoring.</p>
+              </div>
+            </article>
+            <article class="work-card reveal" style="--i: 2">
+              <div class="work-media" data-tone="grey">
+                <span class="work-tag">Editorial</span>
+              </div>
+              <div class="work-meta">
+                <h3>Quiet Press</h3>
+                <p>A reading-first magazine layout with fluid type.</p>
+              </div>
+            </article>
+            <article class="work-card reveal" style="--i: 3">
+              <div class="work-media" data-tone="mocha">
+                <span class="work-tag">Identity</span>
+              </div>
+              <div class="work-meta">
+                <h3>Loomwork</h3>
+                <p>Identity and site for a handwoven textile studio.</p>
+              </div>
+            </article>
+            <article class="work-card reveal" style="--i: 4">
+              <div class="work-media" data-tone="blue">
+                <span class="work-tag">Web app</span>
+              </div>
+              <div class="work-meta">
+                <h3>Fernway</h3>
+                <p>A booking flow for a small-batch plant nursery.</p>
+              </div>
+            </article>
+            <article class="work-card reveal" style="--i: 5">
+              <div class="work-media" data-tone="grey">
+                <span class="work-tag">Landing</span>
+              </div>
+              <div class="work-meta">
+                <h3>Northbound</h3>
+                <p>A launch page for a slow-travel journal app.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Voices / Testimonials -->
+      <section
+        class="section voices"
+        id="voices"
+        aria-labelledby="voices-title"
+      >
+        <div class="container">
+          <header class="section-head reveal section-head--center">
+            <p class="eyebrow">In their words</p>
+            <h2 class="section-title" id="voices-title">
+              Kind <span class="accent">voices</span>.
+            </h2>
+          </header>
+          <div class="voices-grid">
+            <figure class="voice-card reveal">
+              <blockquote>
+                "They handed us a site that loads in under a second and reads
+                cleanly to a screen reader. Our conversion jumped 22%."
+              </blockquote>
+              <figcaption>
+                <span class="voice-avatar" data-tone="mocha">MA</span>
+                <span>
+                  <strong>Mara Allen</strong>
+                  <span class="voice-role">Founder, Harvest &amp; Co.</span>
+                </span>
+              </figcaption>
+            </figure>
+            <figure class="voice-card reveal">
+              <blockquote>
+                "Every detail felt intentional. The type scales beautifully
+                from my phone to my desktop without a single breakpoint
+                hiccup."
+              </blockquote>
+              <figcaption>
+                <span class="voice-avatar" data-tone="blue">DK</span>
+                <span>
+                  <strong>Devin Kaur</strong>
+                  <span class="voice-role">PM, Tidewater</span>
+                </span>
+              </figcaption>
+            </figure>
+            <figure class="voice-card reveal">
+              <blockquote>
+                "No frameworks, no fuss, no lock-in. A year later the codebase
+                is still a pleasure to edit in-house."
+              </blockquote>
+              <figcaption>
+                <span class="voice-avatar" data-tone="grey">OR</span>
+                <span>
+                  <strong>Owen Reyes</strong>
+                  <span class="voice-role">Editor, Quiet Press</span>
+                </span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section
+        class="section contact"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="container contact-grid">
+          <header class="section-head reveal">
+            <p class="eyebrow">Start a project</p>
+            <h2 class="section-title" id="contact-title">
+              Let's make something <span class="accent">considered</span>.
+            </h2>
+            <p class="contact-lede">
+              Tell us a little about what you're building. We reply within two
+              working days.
+            </p>
+            <ul class="contact-details">
+              <li>
+                <span class="contact-label">Email</span>
+                <a href="mailto:hello@mochastudio.example">hello@mochastudio.example</a>
+              </li>
+              <li>
+                <span class="contact-label">Studio</span>
+                <span>Unit 4, Old Mill Lane, Bristol</span>
+              </li>
+              <li>
+                <span class="contact-label">Hours</span>
+                <span>Mon–Thu, 9:00–17:00 GMT</span>
+              </li>
+            </ul>
+          </header>
+          <form class="contact-form reveal" id="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+                required
+              />
+              <span class="field-error" data-for="name"></span>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+              />
+              <span class="field-error" data-for="email"></span>
+            </div>
+            <div class="field">
+              <label for="budget">Budget</label>
+              <select id="budget" name="budget">
+                <option value="">Select a range</option>
+                <option value="under-5k">Under £5k</option>
+                <option value="5-15k">£5k–£15k</option>
+                <option value="15-40k">£15k–£40k</option>
+                <option value="40k-plus">£40k+</option>
+              </select>
+              <span class="field-error" data-for="budget"></span>
+            </div>
+            <div class="field field--full">
+              <label for="message">Project brief</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+              <span class="field-error" data-for="message"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Send enquiry
+            </button>
+            <p
+              class="form-status"
+              id="form-status"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#home" aria-label="Mocha Studio home">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-text">Mocha<span>Studio</span></span>
+          </a>
+          <p class="footer-tag">
+            Considered digital design, hand-coded on the web platform.
+          </p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <h2 class="footer-heading">Studio</h2>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-label="Elsewhere">
+          <h2 class="footer-heading">Elsewhere</h2>
+          <ul>
+            <li><a href="#" rel="noopener">Dribbble</a></li>
+            <li><a href="#" rel="noopener">Are.na</a></li>
+            <li><a href="#" rel="noopener">Read.cv</a></li>
+            <li><a href="#" rel="noopener">RSS</a></li>
+          </ul>
+        </nav>
+        <form class="footer-newsletter" aria-label="Newsletter signup">
+          <h2 class="footer-heading">Field notes</h2>
+          <p>Occasional notes on craft. No noise.</p>
+          <div class="newsletter-field">
+            <label for="newsletter" class="sr-only">Email address</label>
+            <input
+              type="email"
+              id="newsletter"
+              name="newsletter"
+              placeholder="you@example.com"
+              autocomplete="email"
+            />
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </div>
+        </form>
+      </div>
+      <div class="container footer-base">
+        <p>© <span id="year">2026</span> Mocha Studio. Built with vanilla HTML, CSS &amp; JS.</p>
+        <a href="#main" class="back-to-top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
